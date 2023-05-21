@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animal Sounds</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h1 id="title">Animal Sounds</h1>
+  </div>
+
+  <div class="set">
+
+    <div class="row">
+      <div>
+        <img src="images/bee.png" onclick="playSound('sounds/bee.wav')" alt="">
+        <audio id="sounds/bee.wav" src="sounds/bee.wav"></audio>
+
+        <button class="bee animal">Bee</button>
+      </div>
+      <div>
+        <img src="images/horse.png" onclick="playSound('sounds/horse.wav')" alt="">
+        <audio id="sounds/horse.wav" src="sounds/horse.wav"></audio>
+        <button class="horse animal">Horse</button>
+      </div>
+      <div>
+        <img src="images/hyena.png" onclick="playSound('sounds/hyena.wav')" alt="">
+        <audio id="sounds/hyena.wav" src="sounds/hyena.wav"></audio>
+        <button class="hyena animal">Hyena</button>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div>
+        <img src="images/kid.png" onclick="playSound('sounds/kid.wav')" alt="">
+        <audio id="sounds/kid.wav" src="sounds/kid.wav"></audio>
+        <button class="kid animal">Goat</button>
+      </div>
+      <div>
+        <img src="images/lion.png" onclick="playSound('sounds/lion.wav')" alt="">
+        <audio id="sounds/lion.wav" src="sounds/lion.wav"></audio>
+        <button class="lion animal">Lion</button>
+      </div>
+      <div>
+        <img src="images/monkey.png" onclick="playSound('sounds/monkey.wav')" alt="">
+        <audio id="sounds/monkey.wav" src="sounds/monkey.wav"></audio>
+        <button class="monkey animal">Monkey</button>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div>
+        <img src="images/pig.png" onclick="playSound('sounds/pig.wav')" alt="">
+        <audio id="sounds/pig.wav" src="sounds/pig.wav"></audio>
+        <button class="pig animal">Pig</button>
+      </div>
+      <div>
+        <img src="images/cow.png" onclick="playSound('sounds/cow.wav')" alt="">
+        <audio id="sounds/cow.wav" src="sounds/cow.wav"></audio>
+        <button class="cow animal">Cow</button>
+      </div>
+      <div>
+        <img src="images/cat.png" onclick="playSound('sounds/cat.wav')" alt="">
+        <audio id="sounds/cat.wav" src="sounds/cat.wav"></audio>
+        <button class="cat animal">Kitten</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div>
+      <img src="images/elephant.png" onclick="playSound('sounds/elephant.wav')" alt="">
+      <audio id="sounds/elephant.wav" src="sounds/elephant.mp3"></audio>
+      <button class="elephant animal">Elephant</button>
+    </div>
+    <div>
+      <img src="images/dog.png" onclick="playSound('sounds/dog.wav')" alt="">
+      <audio id="sounds/dog.wav" src="sounds/dog.wav"></audio>
+      <button class="wolf animal">Dog</button>
+    </div>
+    <div>
+      <img src="images/rooster.png" onclick="playSound('sounds/rooster.wav')" alt="">
+      <audio id="sounds/rooster.wav" src="sounds/rooster.wav"></audio>
+      <button class="rooster animal">Rooster</button>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="footer">
+    <footer>
+      Made with ❤️ in Riyadh.
+    </footer>
+  </div>
+  <script>
+    function playSound(soundName) {
+      var audio = document.getElementById(soundName);
+      if (audio) {
+        audio.play();
+      } else {
+        console.log("Sound file not found");
+      }
+    }
+  </script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
