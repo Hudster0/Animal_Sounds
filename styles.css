@@ -1,3 +1,91 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+body, html {
+  background-color: #283149;
+  height: 100%;
+    margin: 0;
+    padding: 0;
+  width: 100%;
+  min-width: 400px;
+}
+
 
 .header{
   background-color: darkslateblue;
@@ -7,17 +95,9 @@
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 4px 0 black;
-
 }
 
-body {
-  background-color: #283149;
-}
 
-.set {
-  margin: 10% auto;
-  size: 3rem;
-}
 
 img {
   width: 25rem;
@@ -26,9 +106,11 @@ img {
 
 .row{
   display: flex;
-  margin-bottom: 10rem;
-  margin-left: 11rem;
   flex-direction: row;
+  align-content: space-around;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .game-over {
@@ -41,6 +123,14 @@ img {
   opacity: 0.5;
 }
 
+.buffalo{
+height: 344px;
+}
+
+.cricket{
+  height: 344px;
+
+}
 .animal {
   outline: none;
   /*border: 5px solid #003feb;*/
@@ -75,7 +165,11 @@ transform: scale(1.3,1.3);
 .footer{
   background-color: darkorchid;
   padding: 10rem;
+  width: 100%;
   text-align: center;
   color: #DBEDF3;
   font-family: sans-serif;
+
 }
+
+
