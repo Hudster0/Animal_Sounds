@@ -37,7 +37,7 @@ for (var i = 0; i < document.querySelectorAll(".animal").length; i++) {
             break;
 
          case "Lion":
-            var lion = new Audio("sounds/lion.wav")
+            var lion = new Audio("sounds/lion.mp3")
             lion.play();
             break;
 
@@ -69,6 +69,66 @@ for (var i = 0; i < document.querySelectorAll(".animal").length; i++) {
          case "Rooster":
             var rooster = new Audio("sounds/rooster.wav")
             rooster.play();
+            break;
+
+         case "Buffalo":
+            var buffalo = new Audio("sounds/buffalo.mp3")
+            buffalo.play();
+            break;
+
+         case "Cricket":
+            var cricket = new Audio("sounds/cricket.wav")
+            cricket.play();
+            break;
+
+         case "Crow":
+            var crow = new Audio("sounds/crow.mp3")
+            crow.play();
+            break;
+
+         case "Duck":
+            var duck = new Audio("sounds/duck.mp3")
+            duck.play();
+            break;
+
+         case "Bird":
+            var bird = new Audio("sounds/littleBird.wav")
+            bird.play();
+            break;
+
+         case "Frog":
+            var frog = new Audio("sounds/frog.mp3")
+            frog.play();
+            break;
+
+         case "Hippo":
+            var hippo = new Audio("sounds/hippo.mp3")
+            hippo.play();
+            break;
+
+         case "Raccoon":
+            var raccoon = new Audio("sounds/raccoon.mp3")
+            raccoon.play();
+            break;
+
+         case "Tiger":
+            var tiger = new Audio("sounds/tiger.mp3")
+            tiger.play();
+            break;
+
+         case "Turkey":
+            var turkey = new Audio("sounds/turkey.mp3")
+            turkey.play();
+            break;
+
+         case "Wolf":
+            var wolf = new Audio("sounds/wolf.mp3")
+            wolf.play();
+            break;
+
+         case "Parrot":
+            var parrot = new Audio("sounds/african-grey-parrot.mp3")
+            parrot.play();
             break;
 
          default:
